@@ -1,0 +1,20 @@
+Flask port: 5000
+Templates associated with the project need to be present specifically inside the 'templates' folder
+
+directory structure understanding: https://scotch.io/tutorials/getting-started-with-flask-a-python-microframework
+
+https://towardsdatascience.com/creating-restful-apis-using-flask-and-python-655bad51b24
+You can use the following attributes to fetch the data sent with the request:
+request.data → Access incoming request data as string
+request.args → Access the parsed URL parameters. Returns ImmutableMultiDict
+request.form → Access the form parameters. Return ImmutableMultiDict
+request.values → Returns CombinedMultiDict which combines args and form
+request.json → Returns parsed JSON data if mimetype is application/json
+request.files → Returns MultiDict object which contains all uploaded files. Each key is the name of the file and value is the FileStorage object.
+request.authorization → Returns an object of Authorization class .It represents an Authorization header sent by the client.
+
+Blueprints allow us to separate various endpoints into subdomains. (just like java controller path and then multiple subpaths after that.)
+eg: home is a blueprint. enter, leave are inside it. This creates home/enter, home/leave paths.
+
+RESTful services:
+https://dzone.com/articles/restful-web-services-with-python-flask

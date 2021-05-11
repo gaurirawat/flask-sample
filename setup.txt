@@ -1,0 +1,33 @@
+visual studio code: 
+install software-properties-common apt-transport-https
+https://code.visualstudio.com/download
+
+extensions: code runner, python, bracket pair colorizer2, prettier, indent-rainbow
+On running the code directly, output section shows error. correct ans code using "run python file in terminal". 
+https://stackoverflow.com/questions/61620036/how-to-run-python3-code-in-vscode-bin-sh-1-python-not-found
+Goto settings.json file(File -> Preferences -> Settings -> Extensions -> Scroll down and find "Edit in settings.json")
+) and add this ->
+
+"python.pythonPath": "python3",
+"code-runner.executorMap": {
+    "python": "/usr/bin/python3"        
+}
+
+For using flask form virtual env, set the correct interpreter. Click on bottom left (Python) and select the interpreter with (./env) name.
+https://code.visualstudio.com/docs/python/tutorial-flask
+If it is not available add it manually. You can otherwise add this to json file:
+"python.pythonPath": "/home/abc/dev/ala/venv/bin/python",
+Modify the sode runner path also if you need the output in output window.
+s
+flask tutiorial:
+https://scoutapm.com/blog/python-flask-tutorial-getting-started-with-flask
+
+fro RESTful services:
+https://dzone.com/articles/restful-web-services-with-python-flask
+
+To run the project first activate the virtual environment. Then run the following commands from the 
+root directory of the project. It searches for module and runs the __init__ file.
+
+export FLASK_APP=app    #<project directory name that contains the _init__ file> 
+export FLASK_ENV=development
+flask run
