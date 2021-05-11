@@ -17,12 +17,12 @@ For using flask form virtual env, set the correct interpreter. Click on bottom l
 https://code.visualstudio.com/docs/python/tutorial-flask
 If it is not available add it manually. You can otherwise add this to json file:
 "python.pythonPath": "/home/abc/dev/ala/venv/bin/python",
-Modify the sode runner path also if you need the output in output window.
-s
+Modify the code-runner-extension path also if you need the output in output window.
+
 flask tutiorial:
 https://scoutapm.com/blog/python-flask-tutorial-getting-started-with-flask
 
-fro RESTful services:
+for RESTful services:
 https://dzone.com/articles/restful-web-services-with-python-flask
 
 To run the project first activate the virtual environment. Then run the following commands from the 
